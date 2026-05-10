@@ -10,6 +10,7 @@
     <title>Clemens Glandorf | Kellerabdichtung in Osnabrück</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
   </head>
 
   <body class="bg-slate-50 text-slate-900 antialiased">
@@ -21,94 +22,186 @@
     </a>
 
 <header id="siteHeader" class="fixed left-0 top-0 z-50 w-full transition-all duration-300">
-  <div id="headerInner" class="mx-auto flex max-w-7xl items-center justify-between px-6 py-8 transition-all duration-300">
-    <a href="#" class="block">
+  <div
+    id="headerInner"
+    class="mx-auto flex max-w-7xl items-center justify-between border-b border-white/15 px-6 py-6 transition-all duration-300"
+  >
+    <a
+      id="logoWrap"
+      href="#"
+      class="rounded-2xl bg-white/85 px-4 py-3 backdrop-blur transition-all duration-300"
+    >
       <img
         id="logo"
         src="./assets/2024/02/Logo_Neu-Kopie-e1693313721787.gif"
         alt="Clemens Glandorf"
-        class="h-20 w-auto transition-all duration-300"
+        class="h-14 w-auto transition-all duration-300"
       />
     </a>
 
-    <nav id="mainNav" class="hidden items-center gap-8 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 md:flex">
-      <a class="hover:text-stone-200" href="#leistungen">Leistungen</a>
-      <a class="hover:text-stone-200" href="#unternehmen">Über uns</a>
-      <a class="hover:text-stone-200" href="#kontakt">Kontakt</a>
-      <button aria-label="Suche" class="rounded-full border border-white/40 px-3 py-2 text-white transition hover:bg-white/10">
-        ⌕
-      </button>
+    <nav
+      id="mainNav"
+      class="hidden items-center gap-8 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 md:flex"
+    >
+      <div class="group relative">
+        <a class="hover:text-[#d9b46f]" href="#leistungen">Leistungen</a>
+
+        <div
+          class="invisible absolute right-0 top-full mt-5 w-72 translate-y-2 rounded-3xl bg-white p-3 text-slate-900 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+        >
+<a href="gebaeudeabdichtungen.html" class="flex items-center gap-3 rounded-2xl p-3 hover:bg-[#f3eee6]">
+  <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#b56b3f] text-white">⬒</span>
+  <span>Gebäudeabdichtung</span>
+</a>
+
+          <a href="#leistungen" class="flex items-center gap-3 rounded-2xl p-3 hover:bg-[#f3eee6]">
+            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#d9b46f] text-[#262018]">◌</span>
+            <span>Wohnklima & Schimmel</span>
+          </a>
+
+          <a href="#leistungen" class="flex items-center gap-3 rounded-2xl p-3 hover:bg-[#f3eee6]">
+            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#7f8b68] text-white">▧</span>
+            <span>Betonsanierung</span>
+          </a>
+
+          <a href="#leistungen" class="flex items-center gap-3 rounded-2xl p-3 hover:bg-[#f3eee6]">
+            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#3f4a3c] text-white">▥</span>
+            <span>Denkmalpflege</span>
+          </a>
+        </div>
+      </div>
+
+      <a class="hover:text-[#d9b46f]" href="#unternehmen">Über uns</a>
+      <a class="hover:text-[#d9b46f]" href="#kontakt">Kontakt</a>
+
+      <form
+        id="searchForm"
+        class="flex w-11 items-center overflow-hidden rounded-full border border-white/40 bg-white/10 transition-all duration-300 focus-within:w-64 focus-within:bg-white"
+      >
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Suche"
+          class="w-full bg-transparent px-0 py-2 text-sm text-slate-900 placeholder:text-slate-500 outline-none opacity-0 transition-all duration-300 focus:px-4 focus:opacity-100"
+        />
+
+        <button
+          id="searchButton"
+          aria-label="Suche"
+          class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white transition-colors duration-300"
+          type="button"
+        >
+          ⌕
+        </button>
+      </form>
     </nav>
   </div>
 </header>
 
     <main id="main">
-      <section class="relative overflow-hidden bg-slate-950 text-white">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.35),_transparent_36rem)]"></div>
-        <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-32">
-          <div>
-            <p class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-blue-300">
-              Kellerabdichtung · Gebäudeabdichtung · Sanierung
-            </p>
-            <h1 class="max-w-3xl text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
-              Feuchte Wände und nasse Keller? Ihr Experte in Osnabrück.
-            </h1>
-            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Clemens Glandorf unterstützt bei Diagnose, Abdichtung und Sanierung von Gebäuden — vom Neubau bis zum Altbau.
-            </p>
-            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#kontakt"
-                class="rounded-full bg-blue-600 px-6 py-3 text-center font-bold text-white shadow-lg shadow-blue-950/30 transition hover:bg-blue-500"
-              >
-                Kontakt aufnehmen
-              </a>
-              <a
-                href="#leistungen"
-                class="rounded-full border border-white/25 px-6 py-3 text-center font-bold text-white transition hover:bg-white/10"
-              >
-                Leistungen ansehen
-              </a>
-            </div>
-          </div>
+<section class="relative overflow-hidden bg-[#1f2a24] text-white">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(217,180,111,0.22),_transparent_34rem)]"></div>
 
-          <div class="rounded-3xl border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur">
-            <h2 class="text-xl font-bold">Direkt erreichbar</h2>
-            <div class="mt-6 space-y-4 text-slate-200">
-              <p>
-                <span class="block text-sm text-slate-400">Telefon</span>
-                <a class="text-lg font-bold text-white hover:text-blue-200" href="tel:054151241">0541 / 51241</a>
-              </p>
-              <p>
-                <span class="block text-sm text-slate-400">E-Mail</span>
-                <a class="text-lg font-bold text-white hover:text-blue-200" href="mailto:info@clemens-glandorf.de">info@clemens-glandorf.de</a>
-              </p>
-              <p class="text-sm leading-6 text-slate-300">
-                Für eine sinnvolle Sanierung ist eine genaue Diagnostik wichtig: Woher kommt die Feuchtigkeit und welches Verfahren passt zum Gebäude?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-32 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+    <div>
+      <p class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#d9b46f]">
+        Kellerabdichtung · Gebäudeabdichtung · Sanierung
+      </p>
 
-      <section id="unternehmen" class="mx-auto max-w-7xl px-6 py-20">
-        <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <div>
-            <p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-700">Das Unternehmen</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
-              Schutz und Werterhalt für Ihr Gebäude
-            </h2>
-          </div>
-          <div class="space-y-5 text-lg leading-8 text-slate-700">
-            <p>
-              Feuchte Wände können viele Ursachen haben: Regenwasser, Grundwasser, undichte Leitungen oder Kondensation.
-            </p>
-            <p>
-              Ziel ist es, die Ursache sauber zu erkennen und passende Maßnahmen gegen Feuchtigkeit, Bauschäden und Schimmelrisiken zu planen.
-            </p>
-          </div>
-        </div>
-      </section>
+      <h1 class="max-w-3xl text-4xl font-black tracking-tight sm:text-5xl lg:text-5xl">
+        Feuchte Wände und nasse Keller? Ihr Experte in Osnabrück.
+      </h1>
+
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-white/75">
+        Clemens Glandorf unterstützt bei Diagnose, Abdichtung und Sanierung von Gebäuden — vom Neubau bis zum Altbau.
+      </p>
+
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="#kontakt" class="rounded-full bg-[#d9b46f] px-6 py-3 text-center font-bold text-[#1f2a24] shadow-lg transition hover:bg-[#e7c985]">
+          Kontakt aufnehmen
+        </a>
+
+        <a href="#leistungen" class="rounded-full border border-white/25 px-6 py-3 text-center font-bold text-white transition hover:bg-white/10">
+          Leistungen ansehen
+        </a>
+      </div>
+
+<p class="mt-5 text-sm text-slate-400">
+  Telefonisch erreichbar unter
+  <a class="font-bold text-white hover:text-blue-200" href="tel:054151241">
+    0541 / 51241
+  </a>
+</p>
+    </div>
+
+    
+    <div class="relative min-h-[420px] overflow-hidden rounded-[2rem] bg-[#142018] shadow-2xl">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(217,180,111,0.35),_transparent_22rem)]"></div>
+        <div class="relative min-h-[420px] overflow-hidden rounded-[2rem] shadow-2xl">
+          <img
+            src="./assets/2024/02/IMG_0664.jpeg"
+            alt="Sanierung und Gebäudeabdichtung"
+            class="h-full w-full object-cover"
+          />
+        
+  <div class="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/85 p-5 text-slate-900 backdrop-blur">
+    <p class="text-sm font-bold uppercase tracking-[0.18em] text-[#8a5a32]">
+      Vor Ort in Osnabrück
+    </p>
+    <p class="mt-2 text-lg font-black">
+      Abdichtung, Sanierung und Schutz für bestehende Gebäude.
+    </p>
+  </div>
+</div>
+  </div>
+</section>
+
+<section id="unternehmen" class="bg-white px-6 py-24">
+  <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+    <div class="relative overflow-hidden rounded-[2rem] shadow-2xl">
+      <img
+        src="./assets/2024/02/Wasser_Scheibe-scaled-1.jpg"
+        alt="Kondensation am Fenster als Hinweis auf Feuchtigkeit und Wohnklima"
+        class="h-[460px] w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+    </div>
+
+    <div>
+      <p class="text-sm font-bold uppercase tracking-[0.25em] text-[#8a5a32]">
+        Das Unternehmen
+      </p>
+
+      <h2 class="mt-4 text-4xl font-black tracking-tight text-[#1f2933] md:text-5xl">
+        Erst die Ursache verstehen. Dann dauerhaft sanieren.
+      </h2>
+
+      <p class="mt-6 text-lg leading-8 text-slate-700">
+        Feuchtigkeit im Gebäude entsteht selten zufällig. Regenwasser, Grundwasser,
+        beschädigtes Mauerwerk, Wärmebrücken oder Kondensation können ähnliche
+        Symptome zeigen — brauchen aber unterschiedliche Lösungen.
+      </p>
+
+<div class="mt-8 grid gap-4 sm:grid-cols-2">
+  <div class="rounded-2xl bg-[#f3eee6] p-5 transition hover:-translate-y-1 hover:shadow-xl">
+    <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#b56b3f] text-xl text-white">⌕</div>
+    <h3 class="font-black text-[#1f2933]">Analyse</h3>
+    <p class="mt-2 text-sm leading-6 text-slate-600">
+      Ursache, Material und Schadensbild werden zuerst sauber eingeordnet.
+    </p>
+  </div>
+
+  <div class="rounded-2xl bg-[#edf2e6] p-5 transition hover:-translate-y-1 hover:shadow-xl">
+    <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#7f8b68] text-xl text-white">✓</div>
+    <h3 class="font-black text-[#1f2933]">Sanierung</h3>
+    <p class="mt-2 text-sm leading-6 text-slate-600">
+      Die Maßnahme wird passend zum Gebäude und zur Bausubstanz gewählt.
+    </p>
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="leistungen" class="bg-[#f3eee6] px-6 py-24">
   <div class="mx-auto max-w-7xl">
@@ -127,7 +220,7 @@
         </div>
         <h3 class="text-2xl font-black">Gebäudeabdichtung</h3>
         <p class="mt-4 text-white/85">Abdichtung von Keller, Sockel, Mauerwerk und Gebäudeteilen gegen Feuchtigkeit.</p>
-        <a href="#" class="mt-8 inline-block font-bold">Mehr erfahren →</a>
+        <a href="gebaeudeabdichtungen.html" class="mt-8 inline-block font-bold">Mehr erfahren →</a>
       </article>
 
       <article class="group rounded-[2rem] bg-[#d9b46f] p-8 text-[#262018] shadow-xl transition hover:-translate-y-2">
@@ -208,30 +301,54 @@
         </div>
       </section>
 <script>
+  const logoWrap = document.querySelector("#logoWrap");
   const header = document.querySelector("#siteHeader");
   const headerInner = document.querySelector("#headerInner");
   const logo = document.querySelector("#logo");
   const nav = document.querySelector("#mainNav");
+  const searchButton = document.querySelector("#searchButton");
+  const searchInput = document.querySelector("#searchInput");
+  const searchForm = document.querySelector("#searchForm");
   const year = document.querySelector("#year");
 
   function updateHeader() {
     const scrolled = window.scrollY > 40;
 
-    header.classList.toggle("bg-white/70", scrolled);
+    logo.classList.toggle("h-14", !scrolled);
+    logo.classList.toggle("h-8", scrolled);
+
+    logoWrap.classList.toggle("px-4", !scrolled);
+    logoWrap.classList.toggle("py-3", !scrolled);
+    logoWrap.classList.toggle("rounded-2xl", !scrolled);
+
+    logoWrap.classList.toggle("px-3", scrolled);
+    logoWrap.classList.toggle("py-2", scrolled);
+    logoWrap.classList.toggle("rounded-xl", scrolled);
+
+    header.classList.toggle("bg-white/80", scrolled);
     header.classList.toggle("backdrop-blur-xl", scrolled);
     header.classList.toggle("shadow-lg", scrolled);
-    header.classList.toggle("border-b", scrolled);
-    header.classList.toggle("border-white/40", scrolled);
 
-    headerInner.classList.toggle("py-8", !scrolled);
+    headerInner.classList.toggle("py-6", !scrolled);
     headerInner.classList.toggle("py-3", scrolled);
-
-    logo.classList.toggle("h-20", !scrolled);
-    logo.classList.toggle("h-12", scrolled);
+    headerInner.classList.toggle("border-white/15", !scrolled);
+    headerInner.classList.toggle("border-black/10", scrolled);
 
     nav.classList.toggle("text-white", !scrolled);
     nav.classList.toggle("text-[#2d261f]", scrolled);
+
+    searchButton.classList.toggle("text-white", !scrolled);
+    searchButton.classList.toggle("text-[#2d261f]", scrolled);
+
+    searchForm.classList.toggle("border-white/40", !scrolled);
+    searchForm.classList.toggle("border-black/20", scrolled);
+    searchForm.classList.toggle("bg-white/10", !scrolled);
+    searchForm.classList.toggle("bg-white/60", scrolled);
   }
+
+  searchButton.addEventListener("click", () => {
+    searchInput.focus();
+  });
 
   updateHeader();
   window.addEventListener("scroll", updateHeader);
