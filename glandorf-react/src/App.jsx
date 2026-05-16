@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Wohnklima from "./pages/Wohnklima";
+import Gebaeudeabdichtung from "./pages/Gebaeudeabdichtung";
 
 export default function App() {
   return (
